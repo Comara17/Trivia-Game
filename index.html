@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <nav class="navbar navbar-default">
+		  <div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="https://github.com/Comara17" target="_blank"\> <span class="glyphicon glyphicon-knight" aria-hidden="true"></span>Chris O'Mara</a>
+			</div>
+		  </div>
+		</nav>
+        
+        <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                  <h1 class="text-center">Star Wars Trivia</h1>
+                  <div class="text-center" id="gameArea">
+                      <div id="game" class="container game-box">
+                        <div id="start-game" class="start">
+                            <p>Click on the start button to begin. You have 25 seconds to answer all questions. Click the done button when you are finished.</p>
+                            <button class="btn btn-primary start" id="start-button">Start</button>
+                        </div>
+                        <div id="countdown-timer" class="game">
+                            <span>25</span>
+                        </div>
+                        <div id="timer-message" class="game"></div>
+                        <div class="Q1 question-title game">
+                            <h5>Q1: What is Chewbacca's home planet?</h5>
+                            <input type="radio" name="q1" value="Naboo"> Naboo
+                            <input type="radio" name="q1" value="Kashyyyk"> Kashyyyk
+                            <input type="radio" name="q1" value="Tatooine"> Tatooine
+                            <input type="radio" name="q1" value="Yavin IV"> Yavin IV
+                        </div>
+                        <div class="Q2 question-title game">
+                            <h5>Q2: What member of the Red Squadron was Luke Skywalker?</h5>
+                            <input type="radio" name="q2" value="1"> 1
+                            <input type="radio" name="q2" value="3"> 3
+                            <input type="radio" name="q2" value="7"> 7
+                            <input type="radio" name="q2" value="5"> 5
+                        </div>
+                        <div class="Q3 question-title game">
+                            <h5>Q3: Which of these star ships is not from the Star Wars universe?</h5>
+                            <input type="radio" name="q3" value="A-Wing"> A-Wing
+                            <input type="radio" name="q3" value="B-Wing"> B-Wing
+                            <input type="radio" name="q3" value="T-Wing"> T-Wing
+                            <input type="radio" name="q3" value="Y-Wing"> Y-Wing
+                        </div>
+                        <div class="Q4 question-title game">
+                            <h5>Q4: What planet is the rebel base of operations in A New Hope?</h5>
+                            <input type="radio" name="q4" value="Dantooine"> Dantooine
+                            <input type="radio" name="q4" value="Coruscant"> Coruscant
+                            <input type="radio" name="q4" value="Alderaan"> Alderaan
+                            <input type="radio" name="q4" value="Naboo"> Naboo
+                        </div>
+                        <div class="Q5 question-title game">
+                            <h5>Q5: Which of these lightsaber crystals is not from the Star Wars Universe?</h5>
+                            <input type="radio" name="q5" value="Rubat"> Rubat
+                            <input type="radio" name="q5" value="Zircon"> Zircon
+                            <input type="radio" name="q5" value="Nextor"> Nextor
+                            <input type="radio" name="q5" value="Kyba"> Kyba
+                        </div>
+                        <div id="end-game" class='game'>
+                            <button class="btn btn-primary" id="done-button">Done</button>
+                        </div>
+                        <div id="results" class="results">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/game.js"></script>
+    
+    </body>
+
+</html>
